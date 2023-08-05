@@ -10,17 +10,7 @@ body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    background-image: null;
-    body{ 
-        font-size: small;
 
-    }
-    [class*="col-"] {
-      width: 100%;
-    }
-}
 .last{
     margin-left: 25%;margin-right: 25%;
     width: 50%;
@@ -78,8 +68,10 @@ h4{
 .footer{
     padding: 10px;
     display:inline;
-    background-color: grey;
+
     border-radius: 20px;
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(65, 64, 64))
+
 }
 #same{
     position: absolute;
@@ -90,19 +82,26 @@ font-family: cursive;
 color: rgb(127, 195, 255);
 }
 #head{
-    color:aliceblue;
+    /* text-shadow:rgb(211, 207, 221) 10px 10px 12px ; */
+
+
+    color:rgb(5, 16, 26);
     text-align: center;
     color-scheme:initial ;
     font-family:cursive;
 }
+/* #head:hover{
+    transform: perspective(200px) translateZ(-5px) scaleZ(2) rotateX(-5deg) rotateY(0deg) scaleX(1.2);
+} */
 .icon{
     width: 800px;
     border-radius: 40px;
     height: 450px;
     background-blend-mode: color-burn;
     backface-visibility: visible(100%);
+    background-image: linear-gradient(to bottom right,rgb(188, 180, 24),rgb(179, 5, 5))
 
-    background-color: rgba(38, 42, 45, 0.785);
+
 }
 .logo{
     display:inline-flex;
@@ -149,17 +148,23 @@ table{
     border-radius: 20px;
 padding: 10px;
 }
-#bmi_ans,#bmi_colour{
-    font-size:x-large;
+#bmi_ans,#bmi_colour,#suggestion{
+    font-size:x-large;     
+    display: ruby-text-container;
 }
-#bmi_ans{
-    width:700px;
+#bmi_ans,#suggestion{
+    max-width:700px;
+
 }
 #bmi_colour{
-    width: 700px;
+    min-width: fit-content;
+    max-width: 700px;
     border-radius: 20px;
 padding: 10px;
 
+}
+#suggestion{
+    color: chartreuse;
 }
 #submit{ 
     box-shadow: blanchedalmond;
