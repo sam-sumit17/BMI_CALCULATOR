@@ -1,0 +1,266 @@
+body{
+    width: 100%;
+    background-color: grey;
+    margin: 30px;
+    background-image: url('1.jpg');
+    color: aliceblue;
+    /* background-position:fixed; */
+    background-repeat:repeat-y;
+  background-attachment:fixed;
+  background-size:cover;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h4{
+    background-color:rgba(89, 97, 102, 0.785);
+    border-radius: 20px;
+    padding: 5px;
+}
+.last{
+   margin-left: 30%;
+   margin-right: 30%;
+    text-align: center;
+    background-color: rgb(53, 52, 52);
+    color:aliceblue;
+    font-family: cursive;
+    font-size:small;
+    height:fit-content;
+    width:fit-content;
+    border-radius: 25px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+/* position:absolute;
+bottom:10px; */
+
+
+}
+.footere{
+   
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color:rgba(0, 0, 0, 0.785);
+border-radius: 30px;
+width: 500px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+
+
+
+}
+.vs{
+    display: inline-flex;
+}
+.connect{
+    
+    width: 50px;
+
+    padding: 10px;
+    border-radius: 50px;
+}
+.connectin{width: 70px;
+    padding: 0px;
+    padding-bottom: 0px;
+
+    border-radius: 50px;
+}
+#phone{
+    background-color: aliceblue;
+    width: 30px;
+    margin: 10px;
+}
+#phones{
+    width: 60px;
+    margin-left: -10px;
+}
+.footer{
+    padding: 10px;
+    display:inline;
+
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(65, 64, 64))
+
+}
+h4{
+    background-color:rgba(89, 97, 102, 0.785);
+    border-radius: 20px;
+    padding: 5px;
+}
+#frame{  
+   
+    border-radius: 30px;
+}
+#same{
+    position: absolute;
+    top: 100px;
+    left: 380px;
+font-size: larger;
+font-family: cursive;
+color: rgb(127, 195, 255);
+}
+#head{
+    /* text-shadow:rgb(211, 207, 221) 10px 10px 12px ; */
+
+
+    color:rgb(5, 16, 26);
+    text-align: center;
+    color-scheme:initial ;
+    font-family:cursive;
+}
+/* #head:hover{
+    transform: perspective(200px) translateZ(-5px) scaleZ(2) rotateX(-5deg) rotateY(0deg) scaleX(1.2);
+} */
+.icon{
+    width: 800px;
+    border-radius: 40px;
+    height: 450px;
+    background-blend-mode: color-burn;
+    backface-visibility: visible(100%);
+    background-image: linear-gradient(to bottom right,rgb(188, 180, 24),rgb(179, 5, 5))
+
+
+}
+.logo{
+    display:inline-flex;
+    
+    background-color: rgb(7, 0, 39);
+    border-radius: 30px;
+    color: aliceblue;
+    padding: 15px;
+    margin: 10px;
+    width: 560px;
+
+}
+#weight,#height,#names,.gender_check{
+    /* position: relative;
+    top: 100px; */
+    font-size: larger;
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    border-radius: 8px;
+    border-color: aliceblue;
+    cursor: auto;
+    
+    
+}
+#weight:hover,#height:hover,#names:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+input{
+    padding: 5px;
+}
+table{
+    padding: 30px;
+    row-gap: 200px;
+}
+.labele{
+     /* position: relative;
+    top: 100px; */
+    width: 5000px;
+    font-size:x-large;
+    height:500px;
+    /* background-color: cadetblue; */
+    border-radius: 20px;
+padding: 10px;
+}
+#bmi_ans,#bmi_colour,#suggestion{
+    font-size:x-large;     
+    display: ruby-text-container;
+}
+#bmi_ans,#suggestion{
+    max-width:700px;
+
+}
+#bmi_colour{
+    min-width: fit-content;
+    max-width: 700px;
+    border-radius: 20px;
+padding: 10px;
+
+}
+#suggestion{
+    color: chartreuse;
+}
+#submit{ 
+    box-shadow: blanchedalmond;
+    width:300px;
+    height: 50px;
+    background-color: rgb(69, 172, 236);
+    font-size: larger;
+    border-radius: 20px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* padding: 30px; */
+margin-left: 30px;
+}
+#submit:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+
+}
+/* media query starts here */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        margin: 5px;
+        font-size: smaller;
+        background-image:url('HD-wallpaper-black-pattern-black-design-modern-thumbnail.jpg');
+       
+    }
+    .logo{ 
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+    .icon{
+        
+      background-color:darkgrey;
+        font-size: smaller;
+        width: 100%;
+        height: fit-content;
+        
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    h4{
+        border-radius: 10px;
+        padding: 2px;
+    }
+    #same{
+        font-size: smaller;
+        margin-left: 10%;
+        margin-right: 10%;
+        position:absolute;
+        left: 30%;
+        top: 130px;
+        right: 30%;
+
+        
+
+    }
+    .footere{
+   
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    border-radius: 30px;
+    width:85%;
+    padding-bottom: 10px;
+    }
+    .last{
+        color: rgb(216, 219, 232);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+  }
+
