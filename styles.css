@@ -140,7 +140,7 @@ color: rgb(127, 195, 255);
 #weight,#height,#names,.gender_check{
     /* position: relative;
     top: 100px; */
-    font-size: larger;
+    font-size: large;
     background-color: black;
     color: aliceblue;
     text-align: left;
@@ -268,6 +268,21 @@ margin-left: 30px;
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 10%;
+    }
+    .labele{
+        width:300px;
+        font-size:large;
+        height:fit-content;
+        /* background-color: cadetblue; */
+        border-radius: 20px;
+    padding: 5px;
+    }
+    #weight,#height,#names,.gender_check{
+        
+        font-size:small;
+    }
+    table{
+        padding: 5px;
     }
   }
 
