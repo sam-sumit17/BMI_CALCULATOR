@@ -11,6 +11,11 @@ body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 h4{
     background-color:rgba(89, 97, 102, 0.785);
@@ -117,13 +122,13 @@ color: rgb(127, 195, 255);
     transform: perspective(200px) translateZ(-5px) scaleZ(2) rotateX(-5deg) rotateY(0deg) scaleX(1.2);
 } */
 .icon{
-    width: 800px;
+    width:fit-content;
     border-radius: 40px;
     height: 450px;
     background-blend-mode: color-burn;
     backface-visibility: visible(100%);
-    background-image: linear-gradient(to bottom right,rgb(188, 180, 24),rgb(179, 5, 5))
-
+    background-image: linear-gradient(to bottom right,rgb(188, 180, 24),rgb(179, 5, 5));
+    margin-left: 30px;
 
 }
 .logo{
@@ -151,8 +156,9 @@ color: rgb(127, 195, 255);
     
 }
 #weight:hover,#height:hover,#names:hover{
-    background-color: blanchedalmond;
+    background-color: rgb(202, 127, 14);
     color: black;
+    
 }
 input{
     padding: 5px;
@@ -162,14 +168,13 @@ table{
     row-gap: 200px;
 }
 .labele{
-     /* position: relative;
-    top: 100px; */
+    
     width: 5000px;
     font-size:x-large;
     height:500px;
     /* background-color: cadetblue; */
     border-radius: 20px;
-padding: 10px;
+    padding: 10px;
 }
 #bmi_ans,#bmi_colour,#suggestion{
     font-size:x-large;     
@@ -205,6 +210,15 @@ margin-left: 30px;
     cursor: pointer;
 
 }
+.suffix{
+    position: relative;
+    left: -30px;
+    border-radius: 200px;
+    height: 2px;
+/* background-color: black; */
+
+
+}
 /* media query starts here */
 @media only screen and (max-width: 600px) {
     body {
@@ -218,6 +232,8 @@ margin-left: 30px;
        padding-right: 0%;
     }
     .logo{ 
+        display: flex;
+        justify-content:space-around;
         width:70%;
         margin-left: 15%;
         margin-right: 15%;
@@ -229,7 +245,7 @@ margin-left: 30px;
         font-size: smaller;
         width: 100vw;
         height: fit-content;
-        
+        margin-left: 0px;
         padding-bottom: 30px;
         padding-top: 10px;
     }
@@ -245,9 +261,6 @@ margin-left: 30px;
         left: 30%;
         top: 130px;
         right: 30%;
-
-        
-
     }
     .footere{
    
@@ -270,19 +283,29 @@ margin-left: 30px;
         margin-bottom: 10%;
     }
     .labele{
+        display: contents;
         width:300px;
         font-size:large;
         height:fit-content;
         /* background-color: cadetblue; */
         border-radius: 20px;
+       
     padding: 5px;
+    padding-left: 20px;
     }
     #weight,#height,#names,.gender_check{
-        
+        width: 120px;
         font-size:small;
     }
+    
     table{
         padding: 5px;
+    }
+    input{
+        padding: 2px;
+    }
+    #submit{
+        max-width: 80%;
     }
   }
 
