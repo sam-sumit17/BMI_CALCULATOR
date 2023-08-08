@@ -181,6 +181,7 @@ table{
     display: ruby-text-container;
 }
 #bmi_ans,#suggestion{
+    
     max-width:700px;
 
 }
@@ -234,9 +235,9 @@ margin-left: 30px;
     .logo{ 
         display: flex;
         justify-content:space-around;
-        width:70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
 
     }
     .icon{
@@ -246,8 +247,12 @@ margin-left: 30px;
         width: 100vw;
         height: fit-content;
         margin-left: 0px;
+        /* display: flex; */
+        /* align-content: center; */
+        padding-left: 5%;
         padding-bottom: 30px;
         padding-top: 10px;
+        
     }
     h4{
         border-radius: 10px;
@@ -259,7 +264,7 @@ margin-left: 30px;
         margin-right: 10%;
         position:absolute;
         left: 30%;
-        top: 130px;
+        top: 100px;
         right: 30%;
     }
     .footere{
@@ -284,28 +289,44 @@ margin-left: 30px;
     }
     .labele{
         display: contents;
-        width:300px;
+        width: 35vw;
         font-size:large;
         height:fit-content;
         /* background-color: cadetblue; */
         border-radius: 20px;
-       
+       margin-left: 20px;
     padding: 5px;
     padding-left: 20px;
     }
+    tr{
+        margin-left: 10vw;
+    }
     #weight,#height,#names,.gender_check{
-        width: 120px;
+        width:30vw;
         font-size:small;
+        /* position:absolute;
+        right: 10px; */
     }
     
     table{
         padding: 5px;
+      
+        margin-left:1%;
+        margin-right: 1%;
+        /* text-align: center; */
+
     }
     input{
         padding: 2px;
     }
     #submit{
         max-width: 80%;
+    }
+    #bmi_ans,#suggestion,#bmi_colour{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-width:90vw;
+    
     }
   }
 
