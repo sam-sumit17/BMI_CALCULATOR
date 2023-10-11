@@ -6,10 +6,10 @@ function sam(){
     
    h=document.getElementById('height').value;
    w=document.getElementById('weight').value;
-   if(h===""||h===0)alert("Please Enter your height");
-   if(w===""||w===0)alert("Please Enter your weight");
-   if(h>2.5&&h>0)alert("Enter a valid height");
-   if(w>100&&w>0)alert("Enter a valid weight")
+   if(h===""||h===0){alert("Please Enter your height"); return false;}
+   if(w===""||w===0){alert("Please Enter your weight"); return false;}
+   if(h>2.5&&h>0){alert("Enter a valid height");return false;}
+   if(w>200&&w>0){alert("Enter a valid weight");return false;}
 
     h*=h; 
     bmi=((w/h)/0.01)*0.01;
@@ -21,25 +21,36 @@ function sam(){
     document.getElementById('bmi_ans').innerHTML=x+" "+y+ " " +bmi.toFixed(1)+ " is your BMI (Body Mass Index).";
     if(bmi<=18.5){
         document.getElementById('bmi_colour').style.backgroundColor='yellow';
+        document.getElementById('bmi_ans').style.backgroundColor='yellow';
         document.getElementById('bmi_colour').style.color='black';
         document.getElementById('bmi_colour').innerHTML="You Need To Eat More !";
         
     }
     else if(bmi>=18.5&&bmi<25){
         document.getElementById('bmi_colour').style.backgroundColor='green';
+        document.getElementById('bmi_ans').style.backgroundColor='green';
         document.getElementById('bmi_colour').innerHTML="You Are Perfect  !";
         
     }
     else if(bmi>25&&bmi<30){
         document.getElementById('bmi_colour').style.backgroundColor='orangered';
+        document.getElementById('bmi_ans').style.backgroundColor='orangered';
         document.getElementById('bmi_colour').innerHTML="You Need To Eat Less , a little obese  !";
         
     }
     else {
         document.getElementById('bmi_colour').style.backgroundColor='red';
+        document.getElementById('bmi_ans').style.backgroundColor='red';
         document.getElementById('bmi_colour').innerHTML="You Need To Eat very less , highly obesed !";
 
         
     }
+    document.getElementById('suggestion').style.backgroundColor='brown';
     
+}
+
+document.onkeydown=function(){
+    if(window.event.keyCode=='13'){
+        sam();
+    }
 }

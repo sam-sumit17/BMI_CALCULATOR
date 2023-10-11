@@ -4,8 +4,8 @@ body{
     margin: 30px;
     background-image: url('1.jpg');
     color: aliceblue;
-    /* background-position:fixed; */
-    background-repeat:repeat-y;
+    background-position:fixed;
+    background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -156,7 +156,7 @@ color: rgb(127, 195, 255);
     
 }
 #weight:hover,#height:hover,#names:hover{
-    background-color: rgb(202, 127, 14);
+    background-color: beige;
     color: black;
     
 }
@@ -177,8 +177,13 @@ table{
     padding: 10px;
 }
 #bmi_ans,#bmi_colour,#suggestion{
+    color: black;
     font-size:x-large;     
     display: ruby-text-container;
+}
+#bmi_ans,#suggestion{
+    padding: 10px;
+    border-radius: 20px;
 }
 #bmi_ans,#suggestion{
     

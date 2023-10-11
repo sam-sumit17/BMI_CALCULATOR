@@ -14,13 +14,13 @@
     <H1>Welcome to the BMI calculator</H1>
     
         <img  src="unnamed.png" alt="logo_BMI" width="100px"></div>
-        <p id="same"><u>By Sam Sumit</u> </p>
+        <p id="same"><u>By Sumit Kumar</u> </p>
     
     <div class="icon">
     <table>
         <h1 id="head"><u> BMI CALCULATOR</u></h1>
    <tr> <td><label for="" class="labele">Enter your Name :</label></td>
-    <td ><input type="text" name="names" id="names"></td>
+    <td ><input type="text" name="names" id="names" autofocus></td>
 </tr>
 <tr> <td><br></td></tr>
     <tr><td>
@@ -28,20 +28,18 @@
     <select name="gender" class="gender_check" id="gender" >
         <option value="Male" >Male</option>
         <option value="Female" >Female</option>
-
-
     </select></td></tr>
 
     <tr> <td><br></td></tr>
     <tr><td>
     <label for="" class="labele">Enter your weight :</label></td><td>
-    <input type="number" name="weight" placeholder="1 - 150kg"  id="weight"></td>
+    <input type="number" name="weight" placeholder="1 - 200kg"  id="weight" max="150" maxlength="3" required="required" ></td>
     <td class="suffix">Kg</td>
 </tr>
     <tr> <td><br></td></tr>
     <tr><td>
     <label for="" class="labele">Enter your height :</label></td><td>
-    <input type="number" name="height" placeholder="1-2 metre " id="height" ></td>
+    <input type="number" name="height" placeholder="1-2.5 metre " id="height" maxlength="3" required="required" ></td>
     <td class="suffix">m</td>
 
 </tr>
@@ -49,7 +47,7 @@
     <tr> <td><br></td></tr>
 
 </table>
-    <input type="submit" name="submit" action="sam()" id="submit"value="Calculate My BMI" onclick="sam(weight,height)">
+    <input type="submit"  name="submit" action="sam()" id="submit"value="Calculate My BMI" onclick="sam(weight,height)">
 </div>
     <h3 id="bmi_ans"></h3>
     <h3 id="bmi_colour"></h3>

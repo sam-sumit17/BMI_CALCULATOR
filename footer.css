@@ -1,0 +1,80 @@
+
+h4{
+    background-color:rgba(89, 97, 102, 0.785);
+    border-radius: 20px;
+    padding: 5px;
+}
+.last{
+    margin-left: 35%;margin-right: 30%;
+    text-align: center;
+    background-color: rgb(53, 52, 52);
+    color:aliceblue;
+    font-family: cursive;
+    font-size:small;
+    height:fit-content;
+    width:fit-content;
+    border-radius: 25px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+position: absolute;
+bottom: 10px;
+
+}
+.footere{
+   
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color:rgba(0, 0, 0, 0.785);
+border-radius: 30px;
+width: 500px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+
+
+
+}
+.vs{
+    display: inline-flex;
+}
+.connect{
+    
+    width: 50px;
+
+    padding: 10px;
+    border-radius: 50px;
+}
+.connectin{width: 70px;
+    padding: 0px;
+    padding-bottom: 0px;
+
+    border-radius: 50px;
+}
+#phone{
+    background-color: aliceblue;
+    width: 30px;
+    margin: 10px;
+}
+#phones{
+    width: 60px;
+    margin-left: -10px;
+}
+.footer{
+    padding: 10px;
+    display:inline;
+
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(65, 64, 64))
+
+}
+
+h4{
+    background-color:rgba(89, 97, 102, 0.785);
+    border-radius: 20px;
+    padding: 5px;
+}
